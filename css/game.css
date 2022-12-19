@@ -1,0 +1,47 @@
+.img-game {
+    width: 120px;
+}
+
+.container-life {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+}
+
+.container-life .life {
+    display: flex;
+}
+
+.life img{
+    margin-left: 5px;
+}
+
+.mosquito1 {
+    width: 70px;
+    position: absolute;
+}
+
+.mosquito2 {
+    width: 90px;
+    position: absolute;
+}
+
+.mosquito3 {
+    width: 100px;
+    position: absolute;
+}
+
+.rigth {
+    transform: scaleX(-1);
+}
+
+.delete {
+    display: none;
+}
+
+.win {
+    color: rgb(38, 0, 255);
+}

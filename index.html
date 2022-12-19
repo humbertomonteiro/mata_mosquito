@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Mata Mosquito</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-main">
+            <img class="img" src="./assets/imgs/mosquito.png" alt="mosquito">
+            <h1>
+                Mata Mosquito
+            </h1>
+        </div>
+        <div class="container-btn">
+            <button onclick="nivelGame()" class="btn">Start</button>
+            <select class="btn" name="" id="nivel">
+                <option value="normal">Normal</option>
+                <option value="dificil">Difícil</option>
+                <option value="expert">Experte</option>
+            </select>
+        </div>
+    </div>
+    <script>
+        function nivelGame() {
+            const nivel = document.querySelector('#nivel').value
+            location.href = `./pages/game.html?${nivel}`
+        }
+    </script>
+</body>
+</html>
